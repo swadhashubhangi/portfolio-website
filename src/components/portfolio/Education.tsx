@@ -37,9 +37,11 @@ export function Education() {
               </div>
               <h3 className="text-lg font-semibold">{e.qualification}</h3>
               <p className="text-sm text-muted-foreground mb-2">{e.institution}</p>
-              <span className="inline-block px-3 py-1 text-xs rounded-md bg-primary/10 text-primary border border-primary/20">
-                {e.score}
-              </span>
+              {e.score && (
+                <span className="inline-block px-3 py-1 text-xs rounded-md bg-primary/10 text-primary border border-primary/20">
+                  {e.score}
+                </span>
+              )}
             </div>
           </motion.div>
         ))}

@@ -14,7 +14,7 @@ export const personal = {
         "I believe in continuous learning and gaining hands-on experience through practical work.",
     location: "Jaipur, Rajasthan, India",
     email: "swadha.shubhangi05@gmail.com",
-    phone: "+91 7023872071",
+    phone: "+91 7023872070",
     github: "https://github.com/swadhashubhangi",
     linkedin: "https://www.linkedin.com/in/swadha-shubhangi/",
     resume: "https://drive.google.com/file/d/1FLDsaUcCFWu65jI3lMRliJyPBKvhpXFW/view?usp=sharing",
@@ -84,14 +84,12 @@ export const education = [
     {
         qualification: "Class XII",
         institution: "Asian World School, Jaipur",
-        year: "2024",
-        score: "70.2%",
+        year: "2024"
     },
     {
         qualification: "Class X",
         institution: "Asian World School, Jaipur",
-        year: "2022",
-        score: "87%",
+        year: "2022"
     },
 ];
 
