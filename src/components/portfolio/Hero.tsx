@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { Download, Github, Linkedin, Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { personal } from "@/data/portfolio";
-import profileAsset from "@/assets/profile.jpeg.asset.json";
-import heroBgAsset from "@/assets/hero-bg.png.asset.json";
+import profileImg from "@/assets/Formal pic_swadha.jpeg";
+import heroBgImg from "@/assets/hero-bg.png";
 
 export function Hero() {
   const [idx, setIdx] = useState(0);
@@ -21,7 +21,7 @@ export function Hero() {
     <section id="home" className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
       <div
         className="absolute inset-0 pointer-events-none bg-cover bg-center opacity-40"
-        style={{ backgroundImage: `url(${heroBgAsset.url})` }}
+        style={{ backgroundImage: `url(${heroBgImg})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background pointer-events-none" />
       <div className="absolute inset-0 bg-hero-glow pointer-events-none" />
@@ -148,7 +148,7 @@ export function Hero() {
             <div className="relative h-64 w-64 md:h-80 md:w-80 rounded-full glass p-2 shadow-glow">
               <div className="h-full w-full rounded-full overflow-hidden bg-[image:var(--gradient-primary)]">
                 <img
-                  src={profileAsset.url}
+                  src={profileImg}
                   alt={`Portrait of ${personal.name}`}
                   className="h-full w-full object-cover"
                   loading="eager"
