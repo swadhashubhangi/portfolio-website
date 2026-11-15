@@ -22,7 +22,7 @@ export function IntroAnimation() {
                 }`}
             style={{
                 background:
-                    "radial-gradient(ellipse at center, oklch(0.22 0.04 270) 0%, oklch(0.16 0.02 270) 60%, oklch(0.10 0.02 270) 100%)",
+                    "radial-gradient(ellipse at center, #1b1338 0%, #0d0a21 60%, #080713 100%)",
             }}
             aria-hidden="true"
         >
@@ -37,7 +37,7 @@ export function IntroAnimation() {
                     <div className="absolute inset-0 rounded-full intro-ring" />
                     <div className="absolute inset-2 rounded-full intro-ring-2" />
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="intro-mono text-4xl sm:text-5xl font-display font-bold bg-gradient-to-br from-[oklch(0.85_0.18_265)] to-[oklch(0.75_0.22_305)] bg-clip-text text-transparent">
+                        <span className="intro-mono text-4xl sm:text-5xl font-display font-bold bg-gradient-to-br from-[#c084fc] via-[#e879f9] to-[#f472b6] bg-clip-text text-transparent">
                             SS
                         </span>
                     </div>
@@ -57,7 +57,7 @@ export function IntroAnimation() {
 
                 {/* Loader bar */}
                 <div className="mt-4 w-48 sm:w-64 h-[2px] bg-white/10 rounded-full overflow-hidden">
-                    <div className="intro-bar h-full bg-gradient-to-r from-[oklch(0.70_0.18_265)] to-[oklch(0.65_0.22_305)]" />
+                    <div className="intro-bar h-full bg-gradient-to-r from-[#6366f1] via-[#a855f7] to-[#ec4899]" />
                 </div>
             </div>
 
@@ -89,15 +89,15 @@ export function IntroAnimation() {
         }
         .intro-ring {
           border: 2px solid transparent;
-          border-top-color: oklch(0.70 0.18 265);
-          border-right-color: oklch(0.65 0.22 305);
+          border-top-color: #ec4899;
+          border-right-color: #a855f7;
           animation: intro-ring-spin 2s linear infinite;
-          box-shadow: 0 0 40px oklch(0.70 0.18 265 / 0.4);
+          box-shadow: 0 0 40px rgba(236, 72, 153, 0.45);
         }
         .intro-ring-2 {
           border: 1px solid transparent;
-          border-bottom-color: oklch(0.65 0.22 305 / 0.6);
-          border-left-color: oklch(0.70 0.18 265 / 0.6);
+          border-bottom-color: rgba(236, 72, 153, 0.6);
+          border-left-color: rgba(168, 85, 247, 0.6);
           animation: intro-ring-spin-rev 3s linear infinite;
         }
         .intro-mono {
@@ -122,13 +122,13 @@ export function IntroAnimation() {
         }
         .intro-orb-1 {
           width: 380px; height: 380px;
-          background: oklch(0.70 0.20 265 / 0.6);
+          background: rgba(168, 85, 247, 0.4);
           top: 10%; left: 10%;
           animation: intro-orb-float 5s ease-in-out infinite;
         }
         .intro-orb-2 {
           width: 320px; height: 320px;
-          background: oklch(0.65 0.22 305 / 0.5);
+          background: rgba(236, 72, 153, 0.35);
           bottom: 10%; right: 10%;
           animation: intro-orb-float 6s ease-in-out infinite reverse;
         }

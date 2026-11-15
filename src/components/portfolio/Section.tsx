@@ -22,10 +22,9 @@ export function Section({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mb-12 md:mb-16"
-        >
+          className="max-w-3xl mb-8 md:mb-10"        >
           {eyebrow && (
-            <div className="inline-flex items-center gap-2 rounded-full glass px-3 py-1 text-xs text-muted-foreground mb-4">
+            <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1 text-xs text-pink-300 font-medium mb-4 bg-pink-500/10 border border-pink-500/25 backdrop-blur-md shadow-[0_0_12px_rgba(236,72,153,0.15)]">
               + {eyebrow}
             </div>
           )}
@@ -39,7 +38,9 @@ export function Section({
             )}
           </h2>
           {subtitle && (
-            <p className="mt-4 text-muted-foreground text-lg">{subtitle}</p>
+            <p className="mt-4 text-lg text-muted-foreground whitespace-pre-line">
+              {subtitle}
+            </p>
           )}
         </motion.div>
         {children}

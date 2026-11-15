@@ -12,6 +12,7 @@ import { Footer } from "@/components/portfolio/Footer";
 import { MusicToggle } from "@/components/portfolio/MusicToggle";
 
 import { IntroAnimation } from "@/components/portfolio/IntroAnimation";
+import ChatAssistant from "@/components/portfolio/ChatAssistant";
 
 export const Route = createFileRoute("/")({
   component: Portfolio,
@@ -33,6 +34,7 @@ function Portfolio() {
       </main>
       <Footer />
       <MusicToggle />
+      <ChatAssistant />
       <Toaster theme="dark" position="bottom-right" />
     </div>
   );

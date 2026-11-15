@@ -35,33 +35,34 @@
 
 :root {
     --radius: 0.75rem;
-    /* Dark-only premium theme */
-    --background: oklch(0.16 0.02 270);
-    --foreground: oklch(0.98 0.005 270);
-    --card: oklch(0.20 0.025 270);
-    --card-foreground: oklch(0.98 0.005 270);
-    --popover: oklch(0.20 0.025 270);
-    --popover-foreground: oklch(0.98 0.005 270);
-    --primary: oklch(0.70 0.18 265);
-    --primary-foreground: oklch(0.15 0.02 270);
-    --secondary: oklch(0.25 0.03 270);
-    --secondary-foreground: oklch(0.98 0.005 270);
-    --muted: oklch(0.24 0.025 270);
-    --muted-foreground: oklch(0.70 0.02 270);
-    --accent: oklch(0.65 0.22 295);
-    --accent-foreground: oklch(0.98 0.005 270);
+    /* Deep cosmic purple-magenta neon theme */
+    --background: #080713;
+    --foreground: #F8FAFC;
+    --card: #110E24;
+    --card-foreground: #F8FAFC;
+    --popover: #0F0D22;
+    --popover-foreground: #F8FAFC;
+    --primary: #EC4899;
+    --primary-foreground: #FFFFFF;
+    --secondary: #16122E;
+    --secondary-foreground: #F8FAFC;
+    --muted: #131027;
+    --muted-foreground: #94A3B8;
+    --accent: #D946EF;
+    --accent-foreground: #FFFFFF;
     --destructive: oklch(0.65 0.22 25);
     --destructive-foreground: oklch(0.98 0 0);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 12%);
-    --ring: oklch(0.70 0.18 265);
-    --glow: oklch(0.70 0.20 265);
-    --glow-2: oklch(0.65 0.22 305);
-    --gradient-primary: linear-gradient(135deg, oklch(0.70 0.18 265), oklch(0.65 0.22 305));
-    --gradient-hero: radial-gradient(ellipse at top, oklch(0.70 0.20 265 / 0.25), transparent 60%),
-        radial-gradient(ellipse at bottom right, oklch(0.65 0.22 305 / 0.18), transparent 60%);
-    --shadow-glow: 0 0 60px -10px oklch(0.70 0.18 265 / 0.5);
-    --shadow-elegant: 0 20px 60px -20px oklch(0 0 0 / 0.6);
+    --border: rgba(255, 255, 255, 0.08);
+    --input: rgba(255, 255, 255, 0.08);
+    --ring: #EC4899;
+    --glow: rgba(236, 72, 153, 0.25);
+    --glow-2: rgba(168, 85, 247, 0.2);
+    --gradient-primary: linear-gradient(135deg, #6366F1 0%, #A855F7 50%, #EC4899 100%);
+    --gradient-hero: radial-gradient(circle at 75% 35%, rgba(236, 72, 153, 0.16) 0%, rgba(168, 85, 247, 0.12) 30%, transparent 65%),
+        radial-gradient(circle at 20% 25%, rgba(99, 102, 241, 0.1) 0%, transparent 55%),
+        radial-gradient(circle at 50% 85%, rgba(217, 70, 239, 0.07) 0%, transparent 60%);
+    --shadow-glow: 0 4px 25px -2px rgba(236, 72, 153, 0.35), 0 0 15px -2px rgba(168, 85, 247, 0.3);
+    --shadow-elegant: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
 }
 
 @layer base {
@@ -90,13 +91,13 @@
 }
 
 @utility glass {
-    background: color-mix(in oklab, var(--card) 60%, transparent);
+    background: rgba(17, 14, 36, 0.65);
     backdrop-filter: blur(20px);
-    border: 1px solid color-mix(in oklab, white 8%, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 @utility text-gradient {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #a855f7 0%, #d946ef 45%, #ec4899 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
